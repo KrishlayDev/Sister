@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Priyanka (Titli)!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        @keyframes sparkle {
+            0% { opacity: 0; transform: scale(0.5); }
+            50% { opacity: 1; transform: scale(1.2); }
+            100% { opacity: 0; transform: scale(0.5); }
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .float {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .sparkle {
+            animation: sparkle 2s ease-in-out infinite;
+        }
+        
+        .bounce {
+            animation: bounce 2s ease-in-out infinite;
+        }
+        
+        .delay-1 { animation-delay: 0.2s; }
+        .delay-2 { animation-delay: 0.4s; }
+        .delay-3 { animation-delay: 0.6s; }
+        .delay-4 { animation-delay: 0.8s; }
+        
+        .text-gradient {
+            background: linear-gradient(45deg, #ec4899, #8b5cf6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .transition-all {
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-pink-50 to-purple-50 font-sans">
+    <!-- Floating Sparkles -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none z-0">
+        <div class="absolute top-1/4 left-1/5 w-4 h-4 rounded-full bg-pink-300 opacity-70 sparkle delay-1"></div>
+        <div class="absolute top-1/3 right-1/4 w-3 h-3 rounded-full bg-purple-300 opacity-70 sparkle delay-2"></div>
+        <div class="absolute top-2/3 left-1/3 w-5 h-5 rounded-full bg-yellow-300 opacity-70 sparkle delay-3"></div>
+        <div class="absolute bottom-1/4 right-1/5 w-4 h-4 rounded-full bg-blue-300 opacity-70 sparkle delay-4"></div>
+        <div class="absolute top-1/2 left-1/2 w-3 h-3 rounded-full bg-red-300 opacity-70 sparkle"></div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-pink-500/10 via-purple-500/10 to-indigo-500/10"></div>
+        
+        <div class="relative z-10 container mx-auto px-6 py-16 text-center">
+            <div class="flex justify-center mb-8">
+                <div class="w-40 h-40 md:w-56 md:h-56 rounded-full border-4 border-white shadow-xl overflow-hidden float">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5aa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80" 
+                         alt="Priyanka (Titli)" class="w-full h-full object-cover">
+                </div>
+            </div>
+            
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 text-gradient">
+                Happy Birthday <span class="bounce inline-block">Priyanka!</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-purple-800 mb-8">From your loving brother Krish</p>
+            
+            <div class="mt-12 animate-bounce">
+                <a href="#poem" class="inline-block px-8 py-3 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-full shadow-lg hover:shadow-xl transition-all">
+                    <i class="fas fa-arrow-down mr-2"></i> Scroll Down
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Poem Section -->
+    <section id="poem" class="py-20 bg-white bg-opacity-70 backdrop-blur-sm">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-gradient">My Butterfly Sister</h2>
+                
+                <div class="bg-gradient-to-br from-pink-50 to-purple-50 p-8 md:p-12 rounded-3xl shadow-lg border border-pink-100 transition-all card-hover">
+                    <div class="text-lg md:text-xl text-purple-900 leading-relaxed space-y-4">
+                        <p>Like a butterfly, so graceful and light,</p>
+                        <p>You bring colors to my life, shining so bright.</p>
+                        <p>With wings of love, you flutter around,</p>
+                        <p>Spreading joy wherever you're found.</p>
+                        
+                        <div class="h-1 w-20 mx-auto bg-gradient-to-r from-pink-400 to-purple-500 my-6 rounded-full"></div>
+                        
+                        <p>From childhood days to moments now,</p>
+                        <p>Your laughter's the music that life allows.</p>
+                        <p>My sister, my friend, my guiding star,</p>
+                        <p>No matter how near or how far.</p>
+                    </div>
+                </div>
+                
+                <div class="mt-12">
+                    <img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Butterfly" class="w-24 h-24 mx-auto object-contain float">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sibling Love Section -->
+    <section class="py-20 bg-gradient-to-br from-pink-100 to-purple-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gradient">Sibling Love</h2>
+                <p class="text-xl text-purple-800 max-w-2xl mx-auto">The bond we share is precious and rare</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="bg-white p-8 rounded-3xl shadow-lg border border-pink-100 transition-all card-hover">
+                    <div class="aspect-w-16 aspect-h-9 rounded-2xl overflow-hidden mb-6">
+                        <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" 
+                             alt="Siblings" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-purple-900">Childhood Memories</h3>
+                    <p class="text-purple-800">Remember all those silly games we played? The secrets we shared and the promises we made. You've always been my partner in crime, through every phase and every time.</p>
+                </div>
+                
+                <div>
+                    <div class="bg-white p-8 rounded-3xl shadow-lg border border-pink-100 mb-8 transition-all card-hover">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-pink-500 flex items-center justify-center text-white mr-4">
+                                <i class="fas fa-heart text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-purple-900">Unconditional Love</h3>
+                        </div>
+                        <p class="text-purple-800">No matter what happens, I know you'll always be there. Your support and love show how much you care. Through thick and thin, in joy and strife, you're the best sister in my life.</p>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-3xl shadow-lg border border-pink-100 transition-all card-hover">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-full bg-purple-500 flex items-center justify-center text-white mr-4">
+                                <i class="fas fa-laugh-beam text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-purple-900">Endless Laughter</h3>
+                        </div>
+                        <p class="text-purple-800">Your laughter is contagious, your smile so bright. You turn every moment from dull to light. The way you find joy in little things, reminds me what happiness truly brings.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gradient">Beautiful Moments</h2>
+                <p class="text-xl text-purple-800">Capturing memories we'll cherish forever</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="group relative rounded-2xl overflow-hidden transition-all duration-300 transform hover:scale-105 h-64">
+                    <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Celebration" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-purple-900/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <p class="text-white text-lg">Your beautiful smile lights up every room</p>
+                    </div>
+                </div>
+                
+                <div class="group relative rounded-2xl overflow-hidden transition-all duration-300 transform hover:scale-105 h-64">
+                    <img src="https://images.unsplash.com/photo-1499714608240-22fc6ad53fb2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" 
+                         alt="Cake" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-pink-900/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <p class="text-white text-lg">Sweet moments like your birthday cake</p>
+                    </div>
+                </div>
+                
+                <div class="group relative rounded-2xl overflow-hidden transition-all duration-300 transform hover:scale-105 h-64">
+                    <img src="https://images.unsplash.com/photo-1542038784566-1f42e189942b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Gifts" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-purple-900/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <p class="text-white text-lg">You deserve all the happiness in the world</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Birthday Wishes Section -->
+    <section class="py-20 bg-gradient-to-br from-purple-100 to-pink-100">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-gradient">Birthday Wishes</h2>
+                
+                <div class="relative">
+                    <div class="absolute -top-8 -left-8 w-24 h-24 rounded-full bg-pink-300 opacity-20"></div>
+                    <div class="absolute -bottom-8 -right-8 w-32 h-32 rounded-full bg-purple-300 opacity-20"></div>
+                    
+                    <div class="relative bg-white p-8 md:p-12 rounded-3xl shadow-lg border border-pink-100 transition-all card-hover z-10">
+                        <div class="text-xl md:text-2xl text-purple-900 leading-relaxed space-y-6">
+                            <p>Dear Titli,</p>
+                            
+                            <p>On your special day, I wish you endless happiness, good health, and all the success in the world. May your life be filled with love, laughter, and beautiful moments that become cherished memories.</p>
+                            
+                            <p>You're not just my sister, you're my best friend, my confidant, and my biggest supporter. Thank you for always being there, for understanding me like no one else does, and for loving me unconditionally.</p>
+                            
+                            <p>May this year bring you closer to your dreams and fill your life with wonderful surprises. Keep shining like the star you are, and never forget how much you're loved.</p>
+                            
+                            <p class="font-bold text-pink-600">Happy Birthday to the best sister in the world!</p>
+                            
+                            <p class="mt-8">With all my love,<br>Your brother Krish</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-16">
+                    <div class="inline-block p-4 bg-white rounded-full shadow-lg">
+                        <div class="w-20 h-20 rounded-full bg-gradient-to-r from-pink-500 to-purple-600 flex items-center justify-center text-white text-4xl bounce">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-purple-900 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="#" class="w-12 h-12 rounded-full bg-purple-700 hover:bg-pink-500 transition-all flex items-center justify-center">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="w-12 h-12 rounded-full bg-purple-700 hover:bg-pink-500 transition-all flex items-center justify-center">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="w-12 h-12 rounded-full bg-purple-700 hover:bg-pink-500 transition-all flex items-center justify-center">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+            
+            <p class="mb-4">Made with <i class="fas fa-heart text-pink-400"></i> by Krish for Priyanka (Titli)</p>
+            <p class="text-purple-300">© 2023 Happy Birthday. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Confetti Effect -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script>
+        // Trigger confetti on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            confetti({
+                particleCount: 100,
+                spread: 70,
+                origin: { y: 0.6 }
+            });
+            
+            // Play birthday song
+            const audio = new Audio('https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3');
+            audio.volume = 0.3;
+            audio.play().catch(e => console.log("Auto-play prevented"));
+        });
+        
+        // Add scroll animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fadeIn');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+        
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
