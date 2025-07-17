@@ -590,10 +590,25 @@ body {
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
+        .hover-image {
+  width: 600px; /* or 100%, depending on layout */
+  height: auto;
+  border: 4px solid transparent;
+  transition: border 0.4s ease, transform 0.3s ease;
+  object-fit: cover;
+  display: block;
+}
+
+/* Hover effect */
+.hover-image:hover {
+  border: 4px solid #ff4081;  /* Pink border on hover */
+  transform: scale(1.05);     /* Slight zoom on hover */
+}
     img{
-        height: 150px;
+        height: 550px;
         border-radius: 8px;
-        
+        display: block;
+        margin: 0 auto;
     }
   </style>
 </head>
@@ -656,10 +671,10 @@ body {
                 </div>
             </div>
         </section>
-      <img src="1.jpg" alt="1"><br><br>
-      <img src="2.jpg" alt="2"><br><br>
-      <img src="3.jpg" alt="3"><br><br>
-      <img src="4.jpg" alt="4"><br><br><br>
+      <img src="1.jpg" alt="1" class="hover-image"><br><br>
+      <img src="2.jpg" alt="2" class="hover-image"><br><br>
+      <img src="3.jpg" alt="3" class="hover-image"><br><br>
+      <img src="4.jpg" alt="4" class="hover-image"><br><br><br>
 
         <!-- Top 5 Lines Section -->
         <section class="lines-section">
